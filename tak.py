@@ -1,9 +1,21 @@
 import random
 
-word = random.choice(["python", "banana", "guitar", "planet", "pizza", "rocket"])
+categories = {
+    "coding": ["python", "java", "javascript", "html", "css", "ruby", "php", "csharp", "golang", "typescript"],
+    "animals": ["tiger", "monkey", "rabbit", "dolphin", "turtle"],
+    "food": ["pizza", "banana", "burger", "cookie", "noodles"],
+    "space": ["planet", "rocket", "galaxy", "comet", "meteor"],
+}
+
+print("Categories:", ", ".join(categories))
+choice = ""
+while choice not in categories:
+    choice = input("Pick a category: ").lower()
+
+word = random.choice(categories[choice])
 guessed = []
 lives = 6
-print(f"The word has {len(word)} letters.")  # NEW
+print(f"The word has {len(word)} letters.")
 
 while True:
     display = ""
@@ -36,3 +48,4 @@ while True:
     else:
         lives = lives - 1
         print("No!")
+        
