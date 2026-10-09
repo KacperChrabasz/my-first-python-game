@@ -2,9 +2,9 @@ import random
 
 categories = {
     "coding": ["python", "java", "javascript", "html", "css", "ruby", "php", "csharp", "golang", "typescript"],
-    "animals": ["tiger", "monkey", "rabbit", "dolphin", "turtle"],
-    "food": ["pizza", "banana", "burger", "cookie", "noodles"],
-    "space": ["planet", "rocket", "galaxy", "comet", "meteor"],
+    "animals": ["tiger", "monkey", "rabbit", "dolphin", "turtle", "elephant", "giraffe", "kangaroo", "panda", "zebra"],
+    "food": ["pizza", "banana", "burger", "cookie", "noodles", "sushi", "pasta", "salad", "steak", "taco"],
+    "space": ["planet", "rocket", "galaxy", "comet", "meteor", "asteroid", "satellite", "nebula", "telescope", "astronaut"],
 }
 
 
